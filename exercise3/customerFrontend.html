@@ -1,0 +1,78 @@
+<html>
+    <head align="center">
+        <title>Computer Parts Store (Pandemic Times)</title>
+        <h1>Computer Parts Store (Pandemic Times)</h1>
+        <script type="text/javascript" src ="formChecker.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body align="left">
+        <form action = "customerBackend.php" method="post">
+            <span id="active">
+                <h3 id="changes"></h3>
+            </span>
+
+            <table align="right" border="5px" cellpadding="2px">
+                <thead>
+                    <tr>
+                        <th colspan="4">Products</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr align="center">
+                        <td>
+                            <p>Nvidia RTX 3090 Graphics Card</p>
+                        </td>
+                        <td>
+                            <img src="graphicsCard.jpg" width="200" height="200">
+                        </td>
+                        <td>
+                            $2000.00
+                        </td>
+                        <td>
+                            <input type="number" id="Quantity1" min="0" max="100" value="0" size="3">
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td>
+                            <p>Ryzen 9 CPU</p>
+                        </td>
+                        <td>
+                            <img src="cpu.jpg" width="200" height="200">
+                        </td>
+                        <td>
+                            $1000.00
+                        </td>
+                        <td>
+                            <input type="number" id="Quantity2" min="0" max="100" value="0" size="3">
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td>
+                            <p>Motherboard</p>
+                        </td>
+                        <td>
+                            <img src="motherboard.png" width="200" height="200">
+                        </td>
+                        <td>
+                            $1500.00
+                        </td>
+                        <td>
+                            <input type="number" id="Quantity3" min="0" max="100" value="0" size="3">
+                        </td>
+                    </tr>
+                </tbody>
+            </table><br>
+            <right>
+            <label>Username (email address):</label>
+            <input type="text" id="username" name="username" oninput="active_key()"><br>
+            <label>Password:</label>
+            <input type="text" id="password" name="password" oninput="active_key()"><br>
+            <h3>Shipping Options</h3>
+            <input type="radio" name="shipping" id="shipping" value="0" checked="checked"><label>Free 7 day</label><br>
+            <input type="radio" name="shipping" id="shipping" value="50"><label>$50.00 Overnight</label><br>
+            <input type="radio" name="shipping" id="shipping" value="5"><label>$5.00 3 day</label><br>
+            <input type="submit" value="Submit" class="submitbtn"><input type="reset" value="Reset">
+            </right>
+        </form>
+    </body>
+</html>
